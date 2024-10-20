@@ -22,4 +22,23 @@ console.log(addNumber(8));
 
 
 
+//if you know what your function is gonna return and if it is returning just one type you can do this 
+const myFunction = (myValue: number): boolean =>
+{
+    if (myValue > 10) return true;
+    return false;
+} 
+console.log(myFunction(12))
+
+
+const sayHi = (n: string):string => { 
+    return "hey, what is up" + n;
+
+}
+
+console.log(sayHi("Azad"))
+
 export{}
+
+
+
