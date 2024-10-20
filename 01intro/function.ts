@@ -35,8 +35,32 @@ const sayHi = (n: string):string => {
     return "hey, what is up" + n;
 
 }
-
 console.log(sayHi("Azad"))
+
+
+const games = ["fifa", "call of duty", "city of god"];
+
+const gamesValue = games.map(game => { 
+   return `I loved this game which is called ${game}`;
+});
+
+
+gamesValue.map( val => { 
+    console.log(val)
+});
+
+
+
+const numArr = [1,2,3,4,5,6,7,8];
+
+
+const returnedNums = numArr.map((nums):string => { 
+    console.log(nums.toString());
+    return "hey"
+})
+
+console.log(returnedNums)
+
 
 export{}
 

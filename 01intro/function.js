@@ -19,6 +19,19 @@ var myFunction = function (myValue) {
 };
 console.log(myFunction(12));
 var sayHi = function (n) {
-    return "hey azad what is up" + n;
+    return "hey, what is up" + n;
 };
 console.log(sayHi("Azad"));
+var games = ["fifa", "call of duty", "city of god"];
+var gamesValue = games.map(function (game) {
+    return "I loved this game which is called ".concat(game);
+});
+gamesValue.map(function (val) {
+    console.log(val);
+});
+var numArr = [1, 2, 3, 4, 5, 6, 7, 8];
+var returnedNums = numArr.map(function (nums) {
+    console.log(nums.toString());
+    return "hey";
+});
+console.log(returnedNums);
