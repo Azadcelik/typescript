@@ -62,6 +62,23 @@ const returnedNums = numArr.map((nums):string => {
 console.log(returnedNums)
 
 
+//first type of error function with void 
+
+function errorMessage (errorMsg: string): void 
+{
+    console.log(errorMsg)
+}
+
+
+//second type of error which we handle error and use never 
+function handleError (hndleErr: string): never
+{
+    throw new Error(hndleErr)
+}
+
+
+
+
 export{}
 
 
