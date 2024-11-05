@@ -46,3 +46,27 @@ const anotherTeam: Team = {
 
 
 myCompanyName(anotherTeam)
+
+
+type Disease = {
+    name: string;
+    severity : number;
+    treatment : string;
+}
+
+function learnDisease(disease:Disease): Disease {
+    console.log(disease)
+    return(disease)
+}
+
+
+const instanceDisease:Disease = {
+    name: "Autism",
+    severity: 5,
+    treatment: "ABA"
+}
+
+
+
+learnDisease(instanceDisease)
+

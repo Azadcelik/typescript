@@ -15,9 +15,20 @@ function myCompanyName(team) {
     console.log(team, "how are you do bro");
     return { color: "Blue", price: 123, championship: false };
 }
+//you should create an instance of the Team type that your function expects as an argument
 var anotherTeam = {
     color: "Orange",
     price: 0,
     championship: true
 };
 myCompanyName(anotherTeam);
+function learnDisease(disease) {
+    console.log(disease);
+    return (disease);
+}
+var instanceDisease = {
+    name: "Autism",
+    severity: 5,
+    treatment: "ABA"
+};
+learnDisease(instanceDisease);
