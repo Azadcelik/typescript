@@ -74,7 +74,7 @@ type User = {
     name: string,
     email : string,
     age : number
-    //question mark before colon is optional
+    //question mark before column is optional
     carDetails?: number
 }
 
@@ -84,6 +84,8 @@ let firstUser: User = {
     email: "azad@gmail.com",
     age: 23
 }
+
+//so as i understand after column we always specify type, like what type is it 
 
 const userFunction = (myfirstUser: User): User => {
     return firstUser
