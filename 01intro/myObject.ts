@@ -65,8 +65,27 @@ const instanceDisease:Disease = {
     severity: 5,
     treatment: "ABA"
 }
-
-
-
 learnDisease(instanceDisease)
 
+
+type User = {
+    //readonly is for not manipulating or changing value of  the object
+    readonly _id : string,
+    name: string,
+    email : string,
+    age : number
+    //question mark before colon is optional
+    carDetails?: number
+}
+
+let firstUser: User = {
+    _id: "2",
+    name: "Azad",
+    email: "azad@gmail.com",
+    age: 23
+}
+
+const userFunction = (myfirstUser: User): User => {
+    return firstUser
+}
+console.log(userFunction(firstUser))

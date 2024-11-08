@@ -32,3 +32,13 @@ var instanceDisease = {
     treatment: "ABA"
 };
 learnDisease(instanceDisease);
+var firstUser = {
+    _id: "2",
+    name: "Azad",
+    email: "azad@gmail.com",
+    age: 23
+};
+var userFunction = function (myfirstUser) {
+    return firstUser;
+};
+console.log(userFunction(firstUser));
