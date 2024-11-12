@@ -34,3 +34,29 @@ let user: Admins = {
 }
 
 console.log(user)
+
+
+
+interface Medication {
+    name: string;
+    dose: number;
+    createDose(): string
+}
+
+
+class Onkology implements Medication {
+
+    constructor(public name: string, public dose: number) {
+  
+    }
+
+
+    createDose(): string {
+        return `this is the newly created dose  of the medication`
+    }
+
+}
+
+
+const newPatient = new Onkology("ALexis", 244.21);
+console.log(newPatient.createDose())
